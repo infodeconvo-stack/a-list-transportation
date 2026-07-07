@@ -275,8 +275,9 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.05; letter-spacing:
 /* ---------- Partners ---------- */
 .partners { padding: 44px 0 12px; border-top: 1px solid var(--line); }
 .partners__label { text-align: center; font-family: var(--display); font-weight: 600; font-size: .82rem; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); margin-bottom: 22px; }
-.partners__row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 18px 44px; }
+.partners__row { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 22px 56px; }
 .partners__row span { font-family: var(--display); font-weight: 700; font-size: clamp(1rem, 2vw, 1.35rem); color: var(--ink-2); opacity: .72; letter-spacing: -.02em; }
+.partners__row img { height: 64px; width: auto; max-width: 220px; object-fit: contain; }
 
 /* ---------- What sets us apart ---------- */
 .apart { display: grid; grid-template-columns: 1.05fr .95fr; gap: 48px; align-items: center; }

@@ -52,8 +52,16 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.05; letter-spacing:
 .hdr.scrolled { box-shadow: var(--shadow-sm); border-color: var(--line); }
 .hdr__in { display: flex; align-items: center; height: 74px; gap: 20px; }
 .logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; font-size: 1.4rem; letter-spacing: -.03em; }
-.logo__mark { width: 40px; height: 40px; border-radius: 12px; background: var(--gold); display: grid; place-items: center; color: var(--ink); box-shadow: 0 8px 18px rgba(216,191,38,.4); }
-.logo__mark svg { width: 24px; height: 24px; }
+/* A-List wordmark (recreated from brand logo) */
+.logo--wm { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 3px; line-height: 1; }
+.logo__row { display: inline-flex; align-items: flex-end; gap: 3px; }
+.logo__a { width: 32px; height: 32px; flex: none; }
+.logo__word { font-family: var(--display); font-weight: 700; font-size: 1.72rem; letter-spacing: .015em; color: #6F7378; line-height: .92; }
+.logo__ii { position: relative; }
+.logo__plane { position: absolute; top: -11px; right: -5px; width: 13px; height: 13px; }
+.logo__sub { font-family: var(--display); font-weight: 600; font-size: .55rem; letter-spacing: .43em; text-transform: uppercase; color: var(--gold-deep); padding-left: 3px; white-space: nowrap; }
+.logo__word--ft { color: #fff; }
+.logo__sub--ft { color: var(--ink); }
 .menu { display: flex; align-items: center; gap: 4px; margin-left: auto; }
 .menu > a { padding: 10px 15px; border-radius: 10px; font-weight: 600; font-size: .96rem; color: var(--ink-2); transition: color .2s, background .2s; }
 .menu > a:hover { color: var(--gold-deep); background: var(--gold-soft); }

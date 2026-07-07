@@ -52,7 +52,8 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.05; letter-spacing:
 .hdr.scrolled { box-shadow: var(--shadow-sm); border-color: var(--line); }
 .hdr__in { display: flex; align-items: center; height: 74px; gap: 20px; }
 .logo { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); font-weight: 800; font-size: 1.4rem; letter-spacing: -.03em; }
-/* A-List wordmark (recreated from brand logo) */
+.logo__img { height: 46px; width: auto; display: block; }
+/* A-List wordmark (recreated from brand logo — used in footer on gold bg) */
 .logo--wm { display: inline-flex; flex-direction: column; align-items: flex-start; gap: 3px; line-height: 1; }
 .logo__row { display: inline-flex; align-items: flex-end; gap: 3px; }
 .logo__a { width: 32px; height: 32px; flex: none; }

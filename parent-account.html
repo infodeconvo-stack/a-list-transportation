@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A-List Parent Account — log in to track your student's ride in real time, get pickup and drop-off alerts, and manage schedules." />
+  <title>Parent Account — Track Your Student | A-List Transportation</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+  <header class="hdr" id="nav">
+    <div class="wrap hdr__in">
+      <a href="index.html" class="logo" aria-label="A-List Transportation"><img class="logo__img" src="images/logo.png" alt="A-List Transportation" /></a>
+      <nav class="menu" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="riders.html">Riders</a>
+        <a href="services.html">Services</a>
+        <a href="impact.html">Impact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="parent-account.html" class="menu__login is-here">Parent Login</a>
+        <a href="contact.html" class="btn btn--gold menu__cta">Book a Ride</a>
+      </nav>
+      <button class="burger" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div id="paPage">
+
+    <section class="phero phero--blue">
+      <div class="wrap">
+        <span class="eyebrow eyebrow--blue">Parent Account</span>
+        <h1>Track your student, <span class="bl">every mile</span></h1>
+        <p>Live ride tracking, pickup &amp; drop-off alerts, and your student's whole schedule — in one place.</p>
+      </div>
+    </section>
+
+    <!-- Auth (login / signup) -->
+    <section class="section" id="paAuthSec" style="padding-top:48px">
+      <div class="wrap">
+        <div class="auth reveal" id="paAuth">
+          <div class="auth__tabs">
+            <button type="button" class="auth__tab is-on" id="paTabLogin">Log in</button>
+            <button type="button" class="auth__tab" id="paTabSignup">Sign up</button>
+          </div>
+          <form id="paForm" novalidate>
+            <div class="fld" id="paNameFld" style="display:none"><label for="paName">Your name</label><input id="paName" placeholder="Jane Doe" /></div>
+            <div class="fld"><label for="paEmail">Email</label><input id="paEmail" type="email" placeholder="you@email.com" required /></div>
+            <div class="fld"><label for="paPass">Password</label><input id="paPass" type="password" placeholder="••••••••" required /></div>
+            <button type="submit" class="btn btn--blue btn--lg btn--block" id="paSubmit">Log in</button>
+            <p class="book__note">🔒 Demo preview — account features launch soon. No real data is stored on our servers.</p>
+          </form>
+        </div>
+
+        <!-- Dashboard (after login) -->
+        <div id="paDash" hidden>
+          <div class="dash__bar reveal">
+            <div>
+              <span class="pill-tag pill-tag--blue">Parent dashboard</span>
+              <h2 class="dash__hi">Welcome, <span class="bl" id="paHello">Parent</span> 👋</h2>
+            </div>
+            <button type="button" class="btn btn--dark" id="paLogout">Log out</button>
+          </div>
+
+          <div class="dash">
+            <div class="dcard reveal">
+              <div class="track" style="border:0;box-shadow:none;padding:0">
+                <div class="track__head"><span class="dot dot--live"></span> Live · Student on the way home</div>
+                <div class="track__route">
+                  <div class="track__stop track__stop--done"><b>Lincoln Middle School</b><span>Picked up · 3:10 PM</span></div>
+                  <div class="track__line"></div>
+                  <div class="track__stop track__stop--now"><b>En route · Reading Rd</b><span>ETA 3:24 PM · Van #4</span></div>
+                  <div class="track__line"></div>
+                  <div class="track__stop"><b>Home · 123 Maple St</b><span>Drop-off &amp; alert</span></div>
+                </div>
+                <div class="track__driver"><span class="avatar">M</span><div><b>Marcus T. · Van #4</b><span>Your student's driver today · ⭐ 5+ years, clean record</span></div></div>
+              </div>
+            </div>
+
+            <div class="dash__side">
+              <div class="dcard reveal">
+                <h3 class="dcard__t">This week's schedule</h3>
+                <ul class="sched">
+                  <li><b>Mon–Fri</b><span>7:20 AM · Home → Lincoln Middle</span></li>
+                  <li><b>Mon–Fri</b><span>3:10 PM · Lincoln Middle → Home</span></li>
+                  <li><b>Wed</b><span>5:00 PM · Soccer practice → Home</span></li>
+                </ul>
+                <a href="contact.html" class="btn btn--blue" style="margin-top:14px">Request a change</a>
+              </div>
+              <div class="dcard reveal">
+                <h3 class="dcard__t">Alerts</h3>
+                <label class="alert-row"><input type="checkbox" checked /> Pickup confirmation (text)</label>
+                <label class="alert-row"><input type="checkbox" checked /> Drop-off confirmation (text)</label>
+                <label class="alert-row"><input type="checkbox" /> Driver-arriving alert (5 min before)</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why parent account -->
+    <section class="section riders" style="padding-top:0">
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="eyebrow eyebrow--blue">Why parents love it</span>
+          <h2>Peace of mind, <span class="bl">built in</span></h2>
+        </div>
+        <div class="grid-3">
+          <article class="scard reveal"><span class="scard__ic scard__ic--blue">📍</span><h3>Live tracking</h3><p>Follow the ride from school to your doorstep, in real time.</p></article>
+          <article class="scard reveal"><span class="scard__ic scard__ic--blue">🔔</span><h3>Instant alerts</h3><p>Texts at pickup and drop-off — know the moment it happens.</p></article>
+          <article class="scard reveal"><span class="scard__ic scard__ic--blue">🗓️</span><h3>One dashboard</h3><p>Schedules, drivers and payments — everything in one place.</p></article>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer class="footer">
+    <div class="wrap footer__cols">
+      <div class="footer__col">
+        <span class="footer__mark logo--wm">
+          <span class="logo__row">
+            <svg class="logo__a" viewBox="0 0 120 120" aria-hidden="true"><path d="M8 112 L60 6 L112 112 Z M60 62 L38 112 L82 112 Z" fill="#1B1D21" fill-rule="evenodd"/><path d="M6 88 C42 100 84 76 106 40" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/><circle cx="104" cy="28" r="7" fill="#ffffff"/></svg>
+            <span class="logo__word logo__word--ft">L<span class="logo__ii">I<svg class="logo__plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 21 L23 3 L15 22 L11 14 Z" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round"/></svg></span>ST</span>
+          </span>
+          <span class="logo__sub logo__sub--ft">Transportation</span>
+        </span>
+        <a href="impact.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="riders.html">Riders</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Accessibility Statement</a>
+      </div>
+      <div class="footer__col">
+        <h4>Menu</h4>
+        <a href="riders.html">Students</a>
+        <a href="riders.html">Seniors</a>
+        <a href="parent-account.html">Parent Account</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Book a Ride</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Snapchat</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer__col">
+        <h4>Sign up for exclusive updates</h4>
+        <form class="footer__news" onsubmit="return false" aria-label="Newsletter signup">
+          <input type="email" placeholder="Email" aria-label="Email address" required />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="footer__reach2">
+          <a href="tel:5132769949">513-276-9949</a>
+          <a href="mailto:alisttransportcincy@gmail.com">alisttransportcincy@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__go"><span>GO A-LIST!</span></div>
+    <div class="footer__base">© <span id="year">2026</span> A-List Transportation · 4439 Reading Road, Suite #201B, Cincinnati, OH 45229</div>
+  </footer>
+
+  <a href="tel:5132769949" class="fab" aria-label="Call now">📞</a>
+  <script src="script.js"></script>
+</body>
+</html>

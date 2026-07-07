@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact A-List Transportation — request a ride, get a quote, or ask about school and business partnerships. Cincinnati, OH." />
+  <title>Contact — Ready to Catch a Ride? | A-List Transportation</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+  <header class="hdr" id="nav">
+    <div class="wrap hdr__in">
+      <a href="index.html" class="logo" aria-label="A-List Transportation"><img class="logo__img" src="images/logo.png" alt="A-List Transportation" /></a>
+      <nav class="menu" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="riders.html">Riders</a>
+        <a href="services.html">Services</a>
+        <a href="impact.html">Impact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html" class="is-here">Contact</a>
+        <a href="parent-account.html" class="menu__login">Parent Login</a>
+        <a href="contact.html" class="btn btn--gold menu__cta">Book a Ride</a>
+      </nav>
+      <button class="burger" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="phero">
+    <div class="wrap">
+      <span class="eyebrow">Get in touch</span>
+      <h1>Ready to <span class="g">catch a ride?</span></h1>
+      <p>Tell us what you need and our dispatch team will get right back to you — no obligation.</p>
+    </div>
+  </section>
+
+  <section class="section book" id="book" style="padding-top:56px">
+    <div class="wrap book__grid">
+      <div class="book__copy reveal">
+        <span class="eyebrow">Contact info</span>
+        <h2>We'd love to <span class="g">hear from you</span></h2>
+        <p>Rides, quotes, school partnerships, B2B contracts — one call or one form away.</p>
+        <div class="book__call" style="margin-bottom:18px">
+          <span>Call or text</span>
+          <a href="tel:5132769949">📞 513-276-9949</a>
+        </div>
+        <div class="book__call" style="margin-bottom:18px">
+          <span>Email</span>
+          <a href="mailto:alisttransportcincy@gmail.com" style="font-size:1.1rem">✉️ alisttransportcincy@gmail.com</a>
+        </div>
+        <div class="book__call">
+          <span>Office</span>
+          <a href="#" style="font-size:1.05rem">📍 4439 Reading Road, Suite #201B, Cincinnati, OH 45229</a>
+        </div>
+      </div>
+      <form class="book__form reveal" id="quoteForm" novalidate>
+        <div class="frow">
+          <div class="fld"><label for="fname">First name</label><input id="fname" name="fname" placeholder="Jane" required /></div>
+          <div class="fld"><label for="lname">Last name</label><input id="lname" name="lname" placeholder="Doe" required /></div>
+        </div>
+        <div class="frow">
+          <div class="fld"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(513) 000-0000" required /></div>
+          <div class="fld"><label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Choose one</option>
+              <option>School / student ride</option>
+              <option>Non-emergency medical / dialysis</option>
+              <option>Senior / companion transport</option>
+              <option>Summer school / day camp</option>
+              <option>Large group / event</option>
+              <option>Adult day center</option>
+              <option>Airport run</option>
+              <option>B2B / school partnership</option>
+            </select>
+          </div>
+        </div>
+        <div class="fld"><label for="notes">How can we help? <span class="muted">(optional)</span></label><textarea id="notes" name="notes" rows="4" placeholder="Pickup, drop-off, date/time, wheelchair, recurring schedule…"></textarea></div>
+        <button type="submit" class="btn btn--gold btn--lg btn--block">Get a quote</button>
+        <p class="book__note">🔒 Private — only used to arrange your ride.</p>
+        <div class="book__ok" id="quoteSuccess" hidden><span>✅</span><div><b>Thank you! Your request is in.</b><p>An A-List dispatcher will call you shortly to confirm.</p></div></div>
+      </form>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__cols">
+      <div class="footer__col">
+        <span class="footer__mark logo--wm">
+          <span class="logo__row">
+            <svg class="logo__a" viewBox="0 0 120 120" aria-hidden="true"><path d="M8 112 L60 6 L112 112 Z M60 62 L38 112 L82 112 Z" fill="#1B1D21" fill-rule="evenodd"/><path d="M6 88 C42 100 84 76 106 40" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/><circle cx="104" cy="28" r="7" fill="#ffffff"/></svg>
+            <span class="logo__word logo__word--ft">L<span class="logo__ii">I<svg class="logo__plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 21 L23 3 L15 22 L11 14 Z" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round"/></svg></span>ST</span>
+          </span>
+          <span class="logo__sub logo__sub--ft">Transportation</span>
+        </span>
+        <a href="impact.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="riders.html">Riders</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Accessibility Statement</a>
+      </div>
+      <div class="footer__col">
+        <h4>Menu</h4>
+        <a href="riders.html">Students</a>
+        <a href="riders.html">Seniors</a>
+        <a href="parent-account.html">Parent Account</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Book a Ride</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Snapchat</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer__col">
+        <h4>Sign up for exclusive updates</h4>
+        <form class="footer__news" onsubmit="return false" aria-label="Newsletter signup">
+          <input type="email" placeholder="Email" aria-label="Email address" required />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="footer__reach2">
+          <a href="tel:5132769949">513-276-9949</a>
+          <a href="mailto:alisttransportcincy@gmail.com">alisttransportcincy@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__go"><span>GO A-LIST!</span></div>
+    <div class="footer__base">© <span id="year">2026</span> A-List Transportation · 4439 Reading Road, Suite #201B, Cincinnati, OH 45229</div>
+  </footer>
+
+  <a href="tel:5132769949" class="fab" aria-label="Call now">📞</a>
+  <script src="script.js"></script>
+</body>
+</html>

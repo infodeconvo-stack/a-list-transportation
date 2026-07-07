@@ -119,6 +119,58 @@
     });
   }
 
+  /* ---- Parent account (demo: localStorage-backed) ---- */
+  var paPage = document.getElementById('paPage');
+  if (paPage) {
+    var paAuth = document.getElementById('paAuth');
+    var paDash = document.getElementById('paDash');
+    var paTabLogin = document.getElementById('paTabLogin');
+    var paTabSignup = document.getElementById('paTabSignup');
+    var paNameFld = document.getElementById('paNameFld');
+    var paForm = document.getElementById('paForm');
+    var paMode = 'login';
+
+    function paSetMode(m) {
+      paMode = m;
+      paTabLogin.classList.toggle('is-on', m === 'login');
+      paTabSignup.classList.toggle('is-on', m === 'signup');
+      paNameFld.style.display = m === 'signup' ? '' : 'none';
+      document.getElementById('paSubmit').textContent = m === 'signup' ? 'Create account' : 'Log in';
+    }
+    paTabLogin.addEventListener('click', function () { paSetMode('login'); });
+    paTabSignup.addEventListener('click', function () { paSetMode('signup'); });
+
+    function paRender() {
+      var u = localStorage.getItem('paUser');
+      if (u) {
+        paAuth.hidden = true;
+        paDash.hidden = false;
+        document.getElementById('paHello').textContent = u;
+      } else {
+        paAuth.hidden = false;
+        paDash.hidden = true;
+      }
+    }
+    paForm.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var email = document.getElementById('paEmail').value.trim();
+      var pass = document.getElementById('paPass').value;
+      if (!email || !pass) { paForm.reportValidity(); return; }
+      var name = document.getElementById('paName').value.trim();
+      if (!name) name = email.split('@')[0].replace(/[._-]+/g, ' ');
+      name = name.charAt(0).toUpperCase() + name.slice(1);
+      localStorage.setItem('paUser', name);
+      paRender();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+    document.getElementById('paLogout').addEventListener('click', function () {
+      localStorage.removeItem('paUser');
+      paRender();
+    });
+    paSetMode('login');
+    paRender();
+  }
+
   /* ---- Footer year ---- */
   var yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();

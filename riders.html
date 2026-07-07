@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A-List Transportation riders — safe rides for students, caring senior transport, and a parent account to track your student in real time." />
+  <title>Riders — Students, Seniors &amp; Parents | A-List Transportation</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+  <header class="hdr" id="nav">
+    <div class="wrap hdr__in">
+      <a href="index.html" class="logo" aria-label="A-List Transportation"><img class="logo__img" src="images/logo.png" alt="A-List Transportation" /></a>
+      <nav class="menu" id="navLinks">
+        <a href="index.html">Home</a>
+        <a href="riders.html" class="is-here">Riders</a>
+        <a href="services.html">Services</a>
+        <a href="impact.html">Impact</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Contact</a>
+        <a href="parent-account.html" class="menu__login">Parent Login</a>
+        <a href="contact.html" class="btn btn--gold menu__cta">Book a Ride</a>
+      </nav>
+      <button class="burger" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="phero">
+    <div class="wrap">
+      <span class="eyebrow">Who's riding</span>
+      <h1>Built around <span class="g">every rider</span></h1>
+      <p>Students, seniors, and the parents keeping an eye on it all — pick your world.</p>
+    </div>
+  </section>
+
+  <section class="section riders" id="riders">
+    <div class="wrap">
+      <div class="tabs reveal">
+        <div class="tabs__nav" role="tablist" aria-label="Rider types">
+          <button class="tabs__btn" id="tab-students" role="tab" aria-selected="true" aria-controls="panel-students">Students</button>
+          <button class="tabs__btn" id="tab-seniors" role="tab" aria-selected="false" aria-controls="panel-seniors" tabindex="-1">Seniors</button>
+          <button class="tabs__btn tabs__btn--blue" id="tab-parent" role="tab" aria-selected="false" aria-controls="panel-parent" tabindex="-1">Parent Account</button>
+        </div>
+
+        <div class="tabs__panel is-active" id="panel-students" role="tabpanel" aria-labelledby="tab-students">
+          <div class="rider">
+            <div class="rider__copy">
+              <span class="pill-tag">Students</span>
+              <h3>Safe school &amp; activity rides</h3>
+              <p>Reliable school, sports and childcare transportation parents can count on — vetted drivers and prompt, on-time pickups, every single day.</p>
+              <ul class="ticks">
+                <li>Background-checked, well-trained drivers</li>
+                <li>Daily school, sports &amp; after-care runs</li>
+                <li>Door-to-door pickup and drop-off</li>
+                <li>Recurring weekly schedules made simple</li>
+              </ul>
+              <a href="contact.html" class="btn btn--gold btn--lg">Book a student ride</a>
+            </div>
+            <figure class="rider__img">
+              <img src="images/students.jpg" alt="Students riding safely with A-List" loading="lazy" />
+              <figcaption><span class="dot"></span> Vetted drivers on every run</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="panel-seniors" role="tabpanel" aria-labelledby="tab-seniors" hidden>
+          <div class="rider">
+            <div class="rider__copy">
+              <span class="pill-tag">Seniors</span>
+              <h3>Caring senior &amp; companion care</h3>
+              <p>Patient, friendly transportation for seniors — with a companion by their side and hands-on help from the front door to the destination and back.</p>
+              <ul class="ticks">
+                <li>Assisted &amp; independent living transport</li>
+                <li>Dialysis, medical &amp; appointment rides</li>
+                <li>Senior centers &amp; adult day services</li>
+                <li>Door-to-door companion assistance</li>
+              </ul>
+              <a href="contact.html" class="btn btn--gold btn--lg">Book a senior ride</a>
+            </div>
+            <figure class="rider__img">
+              <img src="images/senior-care.jpg" alt="A-List caring for a senior passenger" loading="lazy" />
+              <figcaption><span class="dot"></span> Companion on every trip</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="panel-parent" role="tabpanel" aria-labelledby="tab-parent" hidden>
+          <div class="rider rider--blue">
+            <div class="rider__copy">
+              <span class="pill-tag pill-tag--blue">Parent Account</span>
+              <h3>Track your student in real time</h3>
+              <p>Create a free parent account to follow every ride live — see pickups and drop-offs the moment they happen, get arrival alerts, and manage your child's whole schedule in one place.</p>
+              <ul class="ticks ticks--blue">
+                <li>Live ride tracking from school to home</li>
+                <li>Pickup &amp; drop-off text alerts</li>
+                <li>Know your driver before they arrive</li>
+                <li>Manage recurring rides &amp; payments</li>
+              </ul>
+              <a href="parent-account.html" class="btn btn--blue btn--lg">Create a parent account</a>
+            </div>
+            <div class="track">
+              <div class="track__head"><span class="dot dot--live"></span> Live · Student on the way home</div>
+              <div class="track__route">
+                <div class="track__stop track__stop--done"><b>Lincoln Middle School</b><span>Picked up · 3:10 PM</span></div>
+                <div class="track__line"></div>
+                <div class="track__stop track__stop--now"><b>En route</b><span>ETA 3:24 PM · Van #4</span></div>
+                <div class="track__line"></div>
+                <div class="track__stop"><b>Home · 123 Maple St</b><span>Drop-off &amp; alert</span></div>
+              </div>
+              <div class="track__driver"><span class="avatar">M</span><div><b>Marcus T. · Van #4</b><span>Your student's driver today</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-sec">
+    <div class="wrap cta reveal">
+      <div class="cta__copy">
+        <h2>Ready to ride with confidence?</h2>
+        <p>Join thousands of Cincinnati families who trust A-List every day.</p>
+      </div>
+      <div class="cta__btns">
+        <a href="contact.html" class="btn btn--gold btn--lg">Book a Ride</a>
+        <a href="tel:5132769949" class="btn btn--light btn--lg">📞 Call now</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="wrap footer__cols">
+      <div class="footer__col">
+        <span class="footer__mark logo--wm">
+          <span class="logo__row">
+            <svg class="logo__a" viewBox="0 0 120 120" aria-hidden="true"><path d="M8 112 L60 6 L112 112 Z M60 62 L38 112 L82 112 Z" fill="#1B1D21" fill-rule="evenodd"/><path d="M6 88 C42 100 84 76 106 40" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round"/><circle cx="104" cy="28" r="7" fill="#ffffff"/></svg>
+            <span class="logo__word logo__word--ft">L<span class="logo__ii">I<svg class="logo__plane" viewBox="0 0 24 24" aria-hidden="true"><path d="M2 21 L23 3 L15 22 L11 14 Z" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linejoin="round"/></svg></span>ST</span>
+          </span>
+          <span class="logo__sub logo__sub--ft">Transportation</span>
+        </span>
+        <a href="impact.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="riders.html">Riders</a>
+        <a href="contact.html">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Accessibility Statement</a>
+      </div>
+      <div class="footer__col">
+        <h4>Menu</h4>
+        <a href="riders.html">Students</a>
+        <a href="riders.html">Seniors</a>
+        <a href="parent-account.html">Parent Account</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="contact.html">Book a Ride</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Snapchat</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer__col">
+        <h4>Sign up for exclusive updates</h4>
+        <form class="footer__news" onsubmit="return false" aria-label="Newsletter signup">
+          <input type="email" placeholder="Email" aria-label="Email address" required />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="footer__reach2">
+          <a href="tel:5132769949">513-276-9949</a>
+          <a href="mailto:alisttransportcincy@gmail.com">alisttransportcincy@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__go"><span>GO A-LIST!</span></div>
+    <div class="footer__base">© <span id="year">2026</span> A-List Transportation · 4439 Reading Road, Suite #201B, Cincinnati, OH 45229</div>
+  </footer>
+
+  <a href="tel:5132769949" class="fab" aria-label="Call now">📞</a>
+  <script src="script.js"></script>
+</body>
+</html>

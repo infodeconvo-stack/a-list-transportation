@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A-List Transportation — Cincinnati's one-stop ride service. Safe, prompt, non-emergency medical, senior, school and group transportation. Track your student in real time." />
+  <title>A-List Transportation — Safe &amp; Reliable Rides for Everyone | Cincinnati</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta property="og:title" content="A-List Transportation — Safe &amp; Reliable Rides for Everyone" />
+  <meta property="og:description" content="Cincinnati rides for students, seniors, medical & groups. Track your student live." />
+  <meta property="og:image" content="images/hero-driver.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body id="top">
+
+  <!-- ===== Header ===== -->
+  <header class="hdr" id="nav">
+    <div class="wrap hdr__in">
+      <a href="#top" class="logo" aria-label="A-List Transportation">
+        <span class="logo__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32"><path d="M4 26 14.5 6a1.7 1.7 0 0 1 3 0L28 26" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="M9.5 20h13" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><path d="m19 14 4 4 7-8" fill="none" stroke="#437DB2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="logo__txt">A-List</span>
+      </a>
+      <nav class="menu" id="navLinks">
+        <a href="#riders">Riders</a>
+        <a href="#services">Services</a>
+        <a href="#difference">Impact</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#book">Contact</a>
+        <a href="#book" class="btn btn--gold menu__cta">Book a Ride</a>
+      </nav>
+      <button class="burger" id="navToggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ===== Hero — full-width city video banner ===== -->
+  <section class="hero">
+    <video class="hero__bg" autoplay muted loop playsinline preload="metadata" poster="images/hero-driver.jpg">
+      <source src="images/hero-video.mp4" type="video/mp4" />
+    </video>
+    <div class="hero__scrim"></div>
+    <span class="hero__badge"><span class="dot dot--live"></span> On the road across Cincinnati</span>
+    <div class="wrap hero__inner">
+      <div class="hero__copy reveal">
+        <span class="tag">Let us take you somewhere</span>
+        <h1>Safe &amp; reliable rides <span class="u">for everyone.</span></h1>
+        <p class="lead">Cincinnati's one-stop ride service — dialysis and medical, senior care, school runs, airport trips and more. Prompt pickups, professional drivers, safety on every single trip.</p>
+        <div class="hero__btns">
+          <a href="#book" class="btn btn--gold btn--lg">Book a Ride</a>
+          <a href="tel:5132769949" class="btn btn--light btn--lg">📞 513-276-9949</a>
+        </div>
+        <ul class="hero__ticks">
+          <li>50,000+ rides completed</li>
+          <li>Vetted drivers</li>
+          <li>On-time, every time</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Did you know ===== -->
+  <section class="section dyk-sec">
+    <div class="wrap dyk">
+      <figure class="dyk__img reveal">
+        <img src="images/fleet-1.jpg" alt="A-List fleet ready for school transportation" loading="lazy" />
+      </figure>
+      <div class="dyk__card reveal">
+        <span class="dyk__logo">A-List</span>
+        <h2>Did you <span class="bl">know?</span></h2>
+        <p>We're excited to announce that this school year marks our first year providing safe, reliable, door-to-door transportation for students. Reach out below to learn more about our rates.</p>
+        <div class="dyk__row">
+          <span class="dyk__handle">@alisttransportcincy</span>
+          <a href="#book" class="btn btn--dark">✈ Sign up</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Riders tabs (Students / Seniors / Parent Account) ===== -->
+  <section class="section riders" id="riders">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Who's riding</span>
+        <h2>Built around <span class="g">every rider</span></h2>
+        <p>Students, seniors, and the parents keeping an eye on it all — pick your world.</p>
+      </div>
+
+      <div class="tabs reveal">
+        <div class="tabs__nav" role="tablist" aria-label="Rider types">
+          <button class="tabs__btn" id="tab-students" role="tab" aria-selected="true" aria-controls="panel-students">Students</button>
+          <button class="tabs__btn" id="tab-seniors" role="tab" aria-selected="false" aria-controls="panel-seniors" tabindex="-1">Seniors</button>
+          <button class="tabs__btn tabs__btn--blue" id="tab-parent" role="tab" aria-selected="false" aria-controls="panel-parent" tabindex="-1">Parent Account</button>
+        </div>
+
+        <div class="tabs__panel is-active" id="panel-students" role="tabpanel" aria-labelledby="tab-students">
+          <div class="rider">
+            <div class="rider__copy">
+              <span class="pill-tag">Students</span>
+              <h3>Safe school &amp; activity rides</h3>
+              <p>Reliable school, sports and childcare transportation parents can count on — vetted drivers and prompt, on-time pickups, every single day.</p>
+              <ul class="ticks">
+                <li>Background-checked, well-trained drivers</li>
+                <li>Daily school, sports &amp; after-care runs</li>
+                <li>Door-to-door pickup and drop-off</li>
+                <li>Recurring weekly schedules made simple</li>
+              </ul>
+              <a href="#book" class="btn btn--gold btn--lg">Book a student ride</a>
+            </div>
+            <figure class="rider__img">
+              <img src="images/students.jpg" alt="Students riding safely with A-List" loading="lazy" />
+              <figcaption><span class="dot"></span> Vetted drivers on every run</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="panel-seniors" role="tabpanel" aria-labelledby="tab-seniors" hidden>
+          <div class="rider">
+            <div class="rider__copy">
+              <span class="pill-tag">Seniors</span>
+              <h3>Caring senior &amp; companion care</h3>
+              <p>Patient, friendly transportation for seniors — with a companion by their side and hands-on help from the front door to the destination and back.</p>
+              <ul class="ticks">
+                <li>Assisted &amp; independent living transport</li>
+                <li>Dialysis, medical &amp; appointment rides</li>
+                <li>Senior centers &amp; adult day services</li>
+                <li>Door-to-door companion assistance</li>
+              </ul>
+              <a href="#book" class="btn btn--gold btn--lg">Book a senior ride</a>
+            </div>
+            <figure class="rider__img">
+              <img src="images/senior-care.jpg" alt="A-List caring for a senior passenger" loading="lazy" />
+              <figcaption><span class="dot"></span> Companion on every trip</figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tabs__panel" id="panel-parent" role="tabpanel" aria-labelledby="tab-parent" hidden>
+          <div class="rider rider--blue">
+            <div class="rider__copy">
+              <span class="pill-tag pill-tag--blue">Parent Account</span>
+              <h3>Track your student in real time</h3>
+              <p>Create a free parent account to follow every ride live — see pickups and drop-offs the moment they happen, get arrival alerts, and manage your child's whole schedule in one place.</p>
+              <ul class="ticks ticks--blue">
+                <li>Live ride tracking from school to home</li>
+                <li>Pickup &amp; drop-off text alerts</li>
+                <li>Know your driver before they arrive</li>
+                <li>Manage recurring rides &amp; payments</li>
+              </ul>
+              <a href="#book" class="btn btn--blue btn--lg">Create a parent account</a>
+            </div>
+            <div class="track">
+              <div class="track__head"><span class="dot dot--live"></span> Live · Student on the way home</div>
+              <div class="track__route">
+                <div class="track__stop track__stop--done"><b>Lincoln Middle School</b><span>Picked up · 3:10 PM</span></div>
+                <div class="track__line"></div>
+                <div class="track__stop track__stop--now"><b>En route</b><span>ETA 3:24 PM · Van #4</span></div>
+                <div class="track__line"></div>
+                <div class="track__stop"><b>Home · 123 Maple St</b><span>Drop-off &amp; alert</span></div>
+              </div>
+              <div class="track__driver"><span class="avatar">M</span><div><b>Marcus T. · Van #4</b><span>Your student's driver today</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== School transportation banner ===== -->
+  <section class="promo" id="school">
+    <div class="wrap promo__in reveal">
+      <div class="promo__copy">
+        <span class="promo__kicker">New</span>
+        <h2>Now offering<br>school transportation</h2>
+        <p>Trusted, on-time rides that get students to class and activities safely — and let parents track every mile.</p>
+        <a href="#riders" class="btn btn--dark btn--lg">Learn more</a>
+      </div>
+      <div class="promo__img">
+        <img src="images/students.jpg" alt="Students who ride with A-List" loading="lazy" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Point A to Point B ===== -->
+  <section class="a2b-sec">
+    <div class="wrap a2b reveal">
+      <div class="a2b__copy">
+        <h2>Point A to<br><span class="bl">Point B.</span></h2>
+        <p>On-time, stress-free rides — our door-to-door service gets you where you need to be. From field trips and doctor's appointments to everyday errands and more.</p>
+        <a href="sms:5132769949" class="btn btn--blue btn--lg">Text Us 💬</a>
+      </div>
+      <figure class="a2b__img">
+        <img src="images/senior-care.jpg" alt="The riders A-List serves — students, seniors and more" loading="lazy" />
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== Services ===== -->
+  <section class="section" id="services">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">What we do</span>
+        <h2>One team, <span class="g">every kind of ride</span></h2>
+        <p>We don't just stop at non-emergency medical transport — we get everyone where they need to be.</p>
+      </div>
+      <div class="svc-list">
+        <div class="svc reveal"><h3>School Transportation</h3><p>B2B contracts available now — A-List is looking for school partnerships for the 2025–2026 school year.</p></div>
+        <div class="svc reveal"><h3>Non-Emergency Medical</h3><p>Safe, timely, comfortable rides to medical appointments, therapy sessions and other essential destinations — without the urgency of an ambulance.</p></div>
+        <div class="svc reveal"><h3>Companion Care</h3><p>More than a ride — friendly, attentive support helping passengers get to and from their destinations safely and comfortably.</p></div>
+        <div class="svc reveal"><h3>Summer School &amp; Day Camps</h3><p>Safe, reliable, kid-friendly transportation for daycares, day camps and summer schools — every child on time and ready.</p></div>
+        <div class="svc reveal"><h3>Large Groups</h3><p>Efficient, comfortable transportation for large groups and events — everyone arrives together and on time.</p></div>
+        <div class="svc reveal"><h3>Adult Day Centers</h3><p>Dependable, compassionate rides for adult day centers, with personalized care and attention throughout the journey.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Fleet gallery ===== -->
+  <section class="section fleet-sec" id="fleet">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Our fleet</span>
+        <h2>A clean, modern <span class="g">fleet</span></h2>
+        <p>Sedans, minivans and spacious passenger vans — insured, well-maintained, and ready across Greater Cincinnati.</p>
+      </div>
+      <div class="fleet">
+        <figure class="fleet__item reveal"><img src="images/fleet-1.jpg" alt="A-List passenger vans lined up and ready" loading="lazy" /><figcaption>Passenger vans &amp; groups</figcaption></figure>
+        <figure class="fleet__item reveal"><img src="images/fleet-2.jpg" alt="A-List vehicles serving downtown Cincinnati" loading="lazy" /><figcaption>Downtown &amp; city runs</figcaption></figure>
+        <figure class="fleet__item reveal"><img src="images/fleet-3.jpg" alt="A-List sedans and minivans for school runs" loading="lazy" /><figcaption>Sedans, minivans &amp; school</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Our Story ===== -->
+  <section class="section story-sec" id="story">
+    <div class="wrap story">
+      <div class="story__media reveal">
+        <img src="images/founder.jpg" alt="Aretha Furr, Founder of A-List Transportation" loading="lazy" />
+        <div class="story__cap"><b>Aretha Furr</b><span>Founder &amp; CEO</span></div>
+      </div>
+      <div class="story__copy reveal">
+        <span class="eyebrow">Our story</span>
+        <h2>Born from love, <span class="g">built on care</span></h2>
+        <p>A-List was founded during the pandemic by Aretha Furr, inspired by her mother — a double amputee and dialysis patient. She saw first-hand the need for reliable, safe and affordable transportation for those who couldn't transport themselves.</p>
+        <blockquote class="pq">"We don't just stop at non-emergency medical transport — we provide rides to <span>everyone</span>."</blockquote>
+        <p>Today we're one of Cincinnati's fastest-growing ride services — and we treat every passenger like family.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Impact / stats ===== -->
+  <section class="section difference" id="difference">
+    <div class="wrap difference__in">
+      <div class="head head--left reveal">
+        <span class="eyebrow">Trusted city-wide</span>
+        <h2>Transportation that's committed to <span class="g">making a difference.</span></h2>
+        <p>Born during the pandemic to help a mother get to dialysis — today one of Cincinnati's fastest-growing ride services, treating every passenger like family.</p>
+        <a href="#book" class="btn btn--gold btn--lg">Ride with us</a>
+      </div>
+      <div class="statgrid reveal">
+        <div class="statbox"><strong data-count="1000">1,000+</strong><span>Families served since 2020</span></div>
+        <div class="statbox"><strong data-count="50">50+</strong><span>City partnerships</span></div>
+        <div class="statbox"><strong data-count="14">14</strong><span>Vehicles &amp; growing</span></div>
+        <div class="statbox"><strong data-count="10">10+</strong><span>Student scholarships</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Partners ===== -->
+  <section class="partners">
+    <div class="wrap">
+      <p class="partners__label reveal">Collaborating with visionaries across industries</p>
+      <div class="partners__row reveal">
+        <span>Cincinnati Public Schools</span>
+        <span>Council on Aging</span>
+        <span>City of Cincinnati</span>
+        <span>Goldman Sachs · 10,000 Small Businesses</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== What sets us apart ===== -->
+  <section class="section apart-sec">
+    <div class="wrap apart">
+      <div class="apart__copy reveal">
+        <span class="eyebrow">Why A-List</span>
+        <h2>What sets us <span class="g">apart</span></h2>
+        <p>A-List is built on a foundation of trust, safety and outstanding service — values our professional drivers uphold every day. They're courteous, punctual, and committed to a comfortable, secure experience for every rider.</p>
+        <div class="spotlight">
+          <span class="spotlight__badge">★ Driver Appreciation Spotlight</span>
+          <p><b>Fun fact:</b> Our driver holds a 100% clean driving record with years of professional transportation experience. Safety isn't just a priority — it's a proven track record.</p>
+          <span class="spotlight__years">5+ years of service</span>
+        </div>
+      </div>
+      <div class="apart__card reveal">
+        <h3>Experienced drivers</h3>
+        <p>Each of our drivers brings years of experience, deep knowledge of the road, and a dedication to treating every passenger with care and respect — ensuring every journey is smooth, efficient and safe.</p>
+        <ul class="ticks ticks--onblue">
+          <li>Background-checked &amp; vetted</li>
+          <li>Courteous &amp; punctual</li>
+          <li>Trained in passenger assistance</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Video showcase ===== -->
+  <section class="section showcase-sec" id="showcase">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">See us in action</span>
+        <h2>Real rides, <span class="g">real care</span></h2>
+        <p>A quick look at the A-List team on the road across Greater Cincinnati.</p>
+      </div>
+      <div class="showcase reveal">
+        <video src="images/promo-video.mp4" controls muted loop playsinline poster="images/fleet-3.jpg"></video>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Reviews ===== -->
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow">Proven success</span>
+        <h2>Loved by <span class="g">Cincinnati families</span></h2>
+      </div>
+      <div class="grid-3">
+        <figure class="rev reveal"><div class="rev__stars">★★★★★</div><blockquote>"We've had the pleasure of supporting A-List since their very first year. Watching their steady growth and commitment to safety, professionalism and community impact has been inspiring."</blockquote><figcaption><span class="avatar">T</span><div><b>Tracy</b><small>GCMI</small></div></figcaption></figure>
+        <figure class="rev reveal"><div class="rev__stars">★★★★★</div><blockquote>"Reliable, friendly, and always on time! The shared rides are convenient, and my kids actually look forward to seeing their friends on the way to school."</blockquote><figcaption><span class="avatar">D</span><div><b>David Patel</b><small>Parent</small></div></figcaption></figure>
+        <figure class="rev reveal"><div class="rev__stars">★★★★★</div><blockquote>"Excellent service from start to finish. The driver is professional and trustworthy, and I feel confident recommending this service to other parents."</blockquote><figcaption><span class="avatar">M</span><div><b>Maria Lopez</b><small>Parent</small></div></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA banner ===== -->
+  <section class="cta-sec">
+    <div class="wrap cta reveal">
+      <div class="cta__copy">
+        <h2>Ready to ride with confidence?</h2>
+        <p>Join thousands of Cincinnati families who trust A-List every day.</p>
+      </div>
+      <div class="cta__btns">
+        <a href="#book" class="btn btn--gold btn--lg">Book a Ride</a>
+        <a href="tel:5132769949" class="btn btn--light btn--lg">📞 Call now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Book / contact ===== -->
+  <section class="section book" id="book">
+    <div class="wrap book__grid">
+      <div class="book__copy reveal">
+        <span class="eyebrow">Get in touch</span>
+        <h2>Ready to <span class="g">catch a ride?</span></h2>
+        <p>Tell us what you need and our dispatch team will get right back to you — no obligation.</p>
+        <div class="book__call">
+          <span>Prefer to talk?</span>
+          <a href="tel:5132769949">📞 513-276-9949</a>
+        </div>
+      </div>
+      <form class="book__form reveal" id="quoteForm" novalidate>
+        <div class="frow">
+          <div class="fld"><label for="fname">First name</label><input id="fname" name="fname" placeholder="Jane" required /></div>
+          <div class="fld"><label for="lname">Last name</label><input id="lname" name="lname" placeholder="Doe" required /></div>
+        </div>
+        <div class="frow">
+          <div class="fld"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" placeholder="(513) 000-0000" required /></div>
+          <div class="fld"><label for="service">Service</label>
+            <select id="service" name="service" required>
+              <option value="" disabled selected>Choose one</option>
+              <option>Non-emergency medical / dialysis</option>
+              <option>Senior / companion transport</option>
+              <option>School / student ride</option>
+              <option>Airport / group / event</option>
+            </select>
+          </div>
+        </div>
+        <div class="fld"><label for="notes">How can we help? <span class="muted">(optional)</span></label><textarea id="notes" name="notes" rows="3" placeholder="Pickup, drop-off, date/time, wheelchair, recurring schedule…"></textarea></div>
+        <button type="submit" class="btn btn--gold btn--lg btn--block">Get a quote</button>
+        <p class="book__note">🔒 Private — only used to arrange your ride.</p>
+        <div class="book__ok" id="quoteSuccess" hidden><span>✅</span><div><b>Thank you! Your request is in.</b><p>An A-List dispatcher will call you shortly to confirm.</p></div></div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== Footer (Site 9 style — gold, columns, GO A-LIST!) ===== -->
+  <footer class="footer" id="contact">
+    <div class="wrap footer__cols">
+      <div class="footer__col">
+        <span class="footer__mark">A<b>-</b>List</span>
+        <a href="#difference">About</a>
+        <a href="#services">Services</a>
+        <a href="#riders">Riders</a>
+        <a href="#book">Contact</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Accessibility Statement</a>
+      </div>
+      <div class="footer__col">
+        <h4>Menu</h4>
+        <a href="#riders">Students</a>
+        <a href="#riders">Seniors</a>
+        <a href="#riders">Parent Account</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#book">Book a Ride</a>
+      </div>
+      <div class="footer__col">
+        <h4>Follow</h4>
+        <a href="#">Instagram</a>
+        <a href="#">Snapchat</a>
+        <a href="#">Facebook</a>
+        <a href="#">YouTube</a>
+      </div>
+      <div class="footer__col">
+        <h4>Sign up for exclusive updates</h4>
+        <form class="footer__news" onsubmit="return false" aria-label="Newsletter signup">
+          <input type="email" placeholder="Email" aria-label="Email address" required />
+          <button type="submit">Submit</button>
+        </form>
+        <div class="footer__reach2">
+          <a href="tel:5132769949">513-276-9949</a>
+          <a href="mailto:alisttransportcincy@gmail.com">alisttransportcincy@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__go"><span>GO A-LIST!</span></div>
+    <div class="footer__base">© <span id="year">2026</span> A-List Transportation · 4439 Reading Road, Suite #201B, Cincinnati, OH 45229</div>
+  </footer>
+
+  <a href="tel:5132769949" class="fab" aria-label="Call now">📞</a>
+
+  <script src="script.js"></script>
+</body>
+</html>

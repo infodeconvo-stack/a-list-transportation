@@ -167,16 +167,16 @@ h1, h2, h3, h4 { font-family: var(--display); line-height: 1.05; letter-spacing:
 .scard h3 { font-size: 1.3rem; margin-bottom: 8px; }
 .scard p { color: var(--muted); font-size: .98rem; }
 
-/* ---------- Impact / stats ---------- */
-.difference { background: var(--ink); }
+/* ---------- Impact / stats (gray, not black) ---------- */
+.difference { background: #585E67; }
 .difference__in { display: grid; grid-template-columns: 1fr 1fr; gap: 54px; align-items: center; }
-.difference .eyebrow { color: var(--gold-bright); background: rgba(216,191,38,.14); }
+.difference .eyebrow { color: var(--gold-bright); background: rgba(255,255,255,.12); }
 .difference h2 { color: #fff; }
-.difference .head--left p { color: #b7bcc4; }
+.difference .head--left p { color: #E3E5E9; }
 .statgrid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
-.statbox { background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.1); border-radius: 18px; padding: 26px; }
+.statbox { background: rgba(255,255,255,.09); border: 1px solid rgba(255,255,255,.18); border-radius: 18px; padding: 26px; }
 .statbox strong { display: block; font-family: var(--display); font-weight: 800; font-size: clamp(2rem, 3.6vw, 2.8rem); color: var(--gold-bright); letter-spacing: -.03em; }
-.statbox span { color: #b7bcc4; font-size: .92rem; }
+.statbox span { color: #E3E5E9; font-size: .92rem; }
 
 /* ---------- Reviews ---------- */
 .rev { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 30px; box-shadow: var(--shadow-sm); transition: transform .25s, box-shadow .25s; }

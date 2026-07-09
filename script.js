@@ -77,20 +77,57 @@
     counters.forEach(function (el) { co.observe(el); });
   }
 
-  /* ---- Quote form (demo submit) ---- */
+  /* ---- Quote form → emails submissions via FormSubmit ---- */
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/alisttransportcincy@gmail.com';
   var form = document.getElementById('quoteForm');
   var success = document.getElementById('quoteSuccess');
   if (form) {
     form.addEventListener('submit', function (e) {
       e.preventDefault();
       if (!form.checkValidity()) { form.reportValidity(); return; }
-      if (success) {
-        success.hidden = false;
-        success.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-      form.querySelectorAll('input, select, textarea').forEach(function (f) { f.value = ''; });
+      var btn = form.querySelector('button[type="submit"]');
+      var btnText = btn ? btn.textContent : '';
+      if (btn) { btn.disabled = true; btn.textContent = 'Sending…'; }
+      var data = { _subject: 'New ride request — alisttransportcincy.com', _template: 'table' };
+      form.querySelectorAll('input, select, textarea').forEach(function (f) { if (f.name) data[f.name] = f.value; });
+      fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(data)
+      }).then(function (r) { return r.json(); }).then(function () {
+        if (btn) { btn.disabled = false; btn.textContent = btnText; }
+        if (success) {
+          success.hidden = false;
+          success.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+        form.querySelectorAll('input, select, textarea').forEach(function (f) { f.value = ''; });
+      }).catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = btnText; }
+        alert('Something went wrong — please call 513-276-9949 or email alisttransportcincy@gmail.com');
+      });
     });
   }
+
+  /* ---- Newsletter forms → email via FormSubmit ---- */
+  document.querySelectorAll('.footer__news').forEach(function (nf) {
+    nf.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var inp = nf.querySelector('input[type="email"]');
+      var btn = nf.querySelector('button');
+      if (!inp || !inp.value.trim()) { if (inp) inp.reportValidity(); return; }
+      if (btn) { btn.disabled = true; btn.textContent = '…'; }
+      fetch(FORM_ENDPOINT, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify({ email: inp.value.trim(), _subject: 'Newsletter signup — alisttransportcincy.com', _template: 'table' })
+      }).then(function (r) { return r.json(); }).then(function () {
+        if (btn) { btn.textContent = '✓ Subscribed'; }
+        inp.value = '';
+      }).catch(function () {
+        if (btn) { btn.disabled = false; btn.textContent = 'Submit'; }
+      });
+    });
+  });
 
   /* ---- Rider tabs (Students / Seniors / Parent Account) ---- */
   var tabBtns = Array.prototype.slice.call(document.querySelectorAll('.tabs__btn'));

@@ -78,7 +78,7 @@
   }
 
   /* ---- Quote form → emails submissions via FormSubmit ---- */
-  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/charae.parks@gmail.com';
+  var FORM_ENDPOINT = 'https://formsubmit.co/ajax/alisttransportcincy@gmail.com';
   var form = document.getElementById('quoteForm');
   var success = document.getElementById('quoteSuccess');
   if (form) {
